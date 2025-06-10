@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f3f4f6;
+      color: #111;
+    }
+
+    header {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      padding: 20px 40px;
+      text-align: center;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #111;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px;
+      background: #ffffff;
+    }
+
+    .hero-text {
+      flex: 1 1 50%;
+      padding: 20px;
+    }
+
+    .hero-text h1 {
+      font-size: 3em;
+      color: #0072ff;
+    }
+
+    .hero-text p {
+      margin: 20px 0;
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    .hero-image {
+      flex: 1 1 40%;
+      text-align: center;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 40px 20px;
+    }
+
+    .feature-box {
+      background: #ffffff;
+      width: 300px;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-10px);
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Our Landing Page</h1>
+    <p>Your one-stop solution to learn and grow!</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Build Your Skills</h1>
+      <p>Learn HTML, CSS and JavaScript by building real projects like this one. Master layout, design, and development in one go!</p>
+    </div>
+    <div class="hero-image">
+      <img src="https://source.unsplash.com/600x400/?coding,technology" alt="Landing Image">
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature-box">
+      <h2>Easy to Use</h2>
+      <p>Simple design and clean code makes it easy to understand and modify.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Fully Responsive</h2>
+      <p>Looks great on all devices including mobile, tablet, and desktop.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Modern UI</h2>
+      <p>Clean and minimal UI design with modern color palette and layout.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>© 2025 YourName. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
 
