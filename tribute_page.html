@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tribute Page</title>
+  <style>
+    :root {
+      --bg-color: #f5f5f5;
+      --text-color: #222;
+      --card-color: #fff;
+    }
+
+    .dark-theme {
+      --bg-color: #121212;
+      --text-color: #f1f1f1;
+      --card-color: #1e1e1e;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: all 0.3s ease;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: var(--card-color);
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    h1, h2 {
+      margin-bottom: 16px;
+    }
+
+    p {
+      line-height: 1.8;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 16px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 999;
+    }
+
+    .toggle-btn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="toggle-btn" onclick="toggleTheme()">Toggle Theme</button>
+
+  <header>
+    <h1>Tribute to Dr. A.P.J. Abdul Kalam</h1>
+    <p>"Missile Man of India" and the People's President</p>
+  </header>
+
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/A.P.J_Abdul_Kalam.jpg/330px-A.P.J_Abdul_Kalam.jpg" alt="Dr. A.P.J. Abdul Kalam">
+
+    <h2>About</h2>
+    <p>
+      Dr. A.P.J. Abdul Kalam was an Indian aerospace scientist and the 11th President of India from 2002 to 2007. He was born on October 15, 1931, and is remembered for his pivotal role in India’s missile and nuclear programs.
+    </p>
+
+    <p>
+      Known for his humility, integrity, and passion for teaching, Dr. Kalam inspired millions through his speeches and books like "Wings of Fire" and "Ignited Minds". He believed in the power of education and youth to shape the future of the nation.
+    </p>
+
+    <h2>Legacy</h2>
+    <p>
+      Dr. Kalam’s work earned him the title of “Missile Man of India” and the Bharat Ratna, India’s highest civilian honor. He passed away on July 27, 2015, while delivering a lecture—doing what he loved most.
+    </p>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-theme');
+    }
+  </script>
+</body>
+</html>
